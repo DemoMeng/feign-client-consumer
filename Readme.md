@@ -24,6 +24,22 @@
 ![调用成功](images/feign调用成功.jpg)
 
 ![网关调用成功](images/网关调用成功.jpg)
+
+
+#配置中心：
+###配置文件名与URL的映射关系
+    
+    Config Server 中配置文件的 HTTP 资源操作方式如下
+    
+    /{application}/{profile}[/{label}]
+    /{application}-{profile}.yml
+    /{label}/{application}-{profile}.yml
+    /{application}-{profile}.properties
+    /{label}/{application}-{profile}.properties
+    
+    其中，{application} 被用于 spring 配置的配置文件名称，在 spring boot 中通常默认为 application；{profile} 表示激活的配置文件，通常用于区分开发/测试/生产环境；{label} 则表示 git 的分支，默认为 master。
+
+
             
 
 

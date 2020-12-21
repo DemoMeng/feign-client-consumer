@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: feign-client-consumer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: feign-config-server
+      name: feign-client-consumer
+      profile: dev
+  profiles:
+    active: dev
+server:
+  port: 3034

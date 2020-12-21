@@ -1,5 +1,5 @@
-server:
-  port: 3034
+#server:
+#  port: 3034
 
 
 #feign指定ip调用feign服务提供方===开始
@@ -12,10 +12,11 @@ server:
 
 
 #Eureka注册中心配置
-spring:
-  application:
-    name: feign-client-consumer
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+#spring:
+#  application:
+#    name: feign-client-consumer
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
