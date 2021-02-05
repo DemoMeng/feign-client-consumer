@@ -11,8 +11,20 @@ spring:
         enabled: true
         service-id: feign-config-server
       name: feign-client-consumer
-      profile: dev
+      profile: prod
+      #profile: dev
+    #sentinel
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+      eager: true
   profiles:
     active: dev
 server:
   port: 3034
+
+
+
+
+

@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient(name="feign-server-provider")
 public interface ServerService {
 
+    //FeignExceptionConfig.class ,fallbackFactory = UserFeignClientFallbackFactory.class, decode404 = true)
+
     /**
      * handle
      * @param userName
