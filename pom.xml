@@ -89,6 +89,8 @@
         </dependencies>
     </dependencyManagement>
 
+
+
     <build>
         <plugins>
             <plugin>
@@ -110,5 +112,33 @@
             </resource>
         </resources>
     </build>
+
+    <!-- 本地私库Nexus地址 -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven myself Mirror</name>
+            <url>http://192.168.2.11:8081/repository/maven-central/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>pubilc</id>
+            <name>Maven myself Mirror</name>
+            <url>http://192.168.2.11:8081/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+    </repositories>
 
 </project>
